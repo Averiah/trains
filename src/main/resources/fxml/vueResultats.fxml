@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #2b2b2b;" type="BorderPane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="107.0" opacity="0.7" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+               <image>
+                  <Image url="@../images/icons/stars.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="155.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logoTrains.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="72.0" prefWidth="520.0" text="Fin de la partie !" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Sitka Text Italic" size="62.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <textFill>
+                        <LinearGradient endX="0.4928909952606635" endY="1.0" startX="0.3981042654028436">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8157894611358643" green="0.6624512672424316" blue="0.1586257368326187" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.7894737124443054" green="0.2730872333049774" blue="0.15716373920440674" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="225.0" right="225.0" />
+               </HBox.margin>
+            </VBox>
+            <ImageView fitHeight="109.0" fitWidth="107.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/stars.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Résultats :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="vue1er" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="1er : " textFill="#ffbf00">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomJoueur1er" text="TOTO" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/score.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="scoreJoueur1er" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="vue2eme" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="2ème : " textFill="#b4b5c6">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomJoueur2eme" text="TUTU" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/score.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="scoreJoueur2eme" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="vue3eme" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="3ème : " textFill="#8a6223">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomJoueur3eme" text="TATA" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/score.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="scoreJoueur3eme" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="vue4eme" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="4ème : " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomJoueur4eme" text="TITI" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/score.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="scoreJoueur4eme" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</fx:root>

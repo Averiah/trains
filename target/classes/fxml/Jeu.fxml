@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fr.umontpellier.iut.trainsJavaFX.vues.*?>
+<?import javafx.scene.layout.*?>
+
+<?import fr.umontpellier.iut.trainsJavaFX.mecanique.plateau.Plateau?>
+<?import fr.umontpellier.iut.trainsJavaFX.vues.VueJoueurCourant?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #2b2b2b;" type="BorderPane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <VueJoueurCourant fx:id="joueurCourant"/>
+    </top>
+    <center>
+        <BorderPane>
+            <center>
+                    <VuePlateau fx:id="plateau"/>
+            </center>
+        </BorderPane>
+    </center>
+    <bottom>
+        <VueMain fx:id="vueCartesMain"/>
+    </bottom>
+    <right>
+        <VueAutresJoueurs fx:id="vueAutresJoueurs"/>
+    </right>
+    <left>
+        <VueCartesAchat fx:id="vueCartesAchat"/>
+    </left>
+</fx:root>

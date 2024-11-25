@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER" type="VBox" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" style="-fx-background-color: #141414;">
+       <ImageView fitHeight="49.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../images/icons/score.png" />
+           </image>
+       </ImageView>
+       <Label fx:id="score" text="1" textFill="WHITE">
+           <font>
+               <Font name="Forte" size="30.0" />
+           </font>
+       </Label>
+       <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../images/icons/coins.png" />
+           </image>
+           <HBox.margin>
+               <Insets left="100.0" />
+           </HBox.margin>
+       </ImageView>
+       <Label fx:id="argent" text="2" textFill="WHITE">
+           <font>
+               <Font name="Forte" size="30.0" />
+           </font>
+       </Label>
+
+       <ImageView fitHeight="60.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../images/logoTrains.png" />
+           </image>
+           <HBox.margin>
+               <Insets left="100.0" right="100.0" />
+           </HBox.margin>
+       </ImageView>
+       <Label fx:id="nbJetonsRail" text="3" textFill="WHITE">
+           <font>
+               <Font name="Forte" size="30.0" />
+           </font>
+       </Label>
+       <ImageView fitHeight="55.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../images/icons/rail.png" />
+           </image>
+       </ImageView>
+       <Label fx:id="pointsRail" text="2" textFill="WHITE">
+           <font>
+               <Font name="Forte" size="30.0" />
+           </font>
+           <opaqueInsets>
+               <Insets />
+           </opaqueInsets>
+           <HBox.margin>
+               <Insets left="100.0" />
+           </HBox.margin>
+       </Label>
+       <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../images/icons/nbJetonsRails.png" />
+           </image>
+       </ImageView>
+      </HBox>
+      <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+      <HBox fx:id="HBoxLabelJoueur" alignment="CENTER" style="-fx-background-color: #141414;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/joueurLogo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="3.0" right="3.0" top="2.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="nomJoueur" text="TOTO" textFill="WHITE">
+               <font>
+                  <Font name="Forte" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+   </children>
+</fx:root>

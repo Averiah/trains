@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER" style="-fx-background-color: GREEN; -fx-border-radius: 20; -fx-background-radius: 20;" type="HBox" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons/joueurLogo.png" />
+         </image>
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="2.0" top="10.0" />
+         </HBox.margin>
+      </ImageView>
+      <Label fx:id="nomJoueur" text="Tata">
+         <font>
+            <Font name="Forte" size="18.0" />
+         </font>
+         <HBox.margin>
+            <Insets right="40.0" />
+         </HBox.margin>
+      </Label>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/score.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="scoreJoueur" text="0">
+                     <font>
+                        <Font name="Forte" size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/rail.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="pointsRails" text="0">
+                     <HBox.margin>
+                        <Insets left="2.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Forte" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/cards.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="2.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="nbCartes" text="0">
+                     <HBox.margin>
+                        <Insets left="2.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Forte" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</fx:root>
